@@ -22,7 +22,7 @@ Cloq::Cloq(QString svg_fn,
   resizing(false)
 {
   renderer = new QSvgRenderer(svg_fn, this);
-  scene = new QGraphicsScene(-100.0, -100.0, 200.0, 200.0, this);
+  scene = new QGraphicsScene(this);
   setContentsMargins(0, 0, 0, 0);
   setStyleSheet("border: 0px");
 
