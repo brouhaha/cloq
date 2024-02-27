@@ -24,12 +24,9 @@ CloqItem::CloqItem(std::string element_id,
   setSharedRenderer(renderer);
   setElementId(q_element_id);
 
-#if 0
-  QRectF raw_bounds = renderer->boundsOnElement(q_element_id);
-  QTransform transform = renderer->transformForElement(q_element_id);
-  QRectF bounds = transform.mapRect(raw_bounds);
+  QRectF bounds = renderer->boundsOnElement(q_element_id);
   setPos(bounds.x(), bounds.y());
-#endif
+  setTransformOriginPoint(-bounds.x(), -bounds.y());
 
   setVisible(visible);
 

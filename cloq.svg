@@ -35,7 +35,7 @@ SPDX-License-Identifier: GPL-3.0-only
 
     <g id="hour_hand">
       <polygon style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
-	       points="0,-50  2.5,-35  0,10  -2.5,-35"/>
+	       points="0,-50  4.0,-30  0,10  -4.0,-30"/>
     </g>
 
     <g id="minute_hand">
@@ -50,26 +50,26 @@ SPDX-License-Identifier: GPL-3.0-only
   </defs>
 
   <g id="clock">
-    <circle style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
-	    cx="100.0"
-	    cy="100.0"
+    <circle style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0"
+	    cx="0.0"
+	    cy="0.0"
 	    r="100.0"/>
-    <circle style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.25"
-	    cx="100.0"
-	    cy="100.0"
+    <circle style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0"
+	    cx="0.0"
+	    cy="0.0"
 	    r="95.0"/>a
-    <use href="#tick_group" transform="translate(100,100) rotate(  0)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate( 30)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate( 60)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate( 90)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate(120)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate(150)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate(180)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate(210)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate(240)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate(270)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate(300)"/>
-    <use href="#tick_group" transform="translate(100,100) rotate(330)"/>
+    <use href="#tick_group" transform="rotate(  0)"/>
+    <use href="#tick_group" transform="rotate( 30)"/>
+    <use href="#tick_group" transform="rotate( 60)"/>
+    <use href="#tick_group" transform="rotate( 90)"/>
+    <use href="#tick_group" transform="rotate(120)"/>
+    <use href="#tick_group" transform="rotate(150)"/>
+    <use href="#tick_group" transform="rotate(180)"/>
+    <use href="#tick_group" transform="rotate(210)"/>
+    <use href="#tick_group" transform="rotate(240)"/>
+    <use href="#tick_group" transform="rotate(270)"/>
+    <use href="#tick_group" transform="rotate(300)"/>
+    <use href="#tick_group" transform="rotate(330)"/>
 
 <!--
     <use id="hour_hand"   href="#hour_hand_template"   transform="translate(100,100) rotate(90)"/>
@@ -77,9 +77,9 @@ SPDX-License-Identifier: GPL-3.0-only
     <use id="second_hand" href="#second_hand_template" transform="translate(100,100)"/>
 -->
 
-    <circle style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
-	    cx="100.0"
-	    cy="100.0"
+    <circle style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0"
+	    cx="0.0"
+	    cy="0.0"
 	    r="3.0"/>a
   </g>
 

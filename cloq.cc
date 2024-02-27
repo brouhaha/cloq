@@ -1,9 +1,6 @@
 // Copyright 2022-2024 Eric Smith
 // SPDX-License-Identifier: GPL-3.0-only
 
-#include <iostream>
-#include <format>
-
 #include <string>
 
 #include <QGraphicsScene>
@@ -42,25 +39,10 @@ Cloq::Cloq(QString svg_fn,
   boundary->setBoundingRegionGranularity(1.0);
 
   clock       = new CloqItem("clock",       renderer, scene);
-  clock->setPos(-100.0, -100.0);
-
 
   hour_hand   = new CloqItem("hour_hand",   renderer, scene);
-  hour_hand->setPos(-4.0, -50.0);
-  hour_hand->setTransformOriginPoint(4.0, 50.0);
-
   minute_hand = new CloqItem("minute_hand", renderer, scene);
-  minute_hand->setPos(-2.5, -70.0);
-  minute_hand->setTransformOriginPoint(2.5, 70.0);
-
   second_hand = new CloqItem("second_hand", renderer, scene);
-  second_hand->setPos(-7.0, -80.0);
-  second_hand->setTransformOriginPoint(7.0, 80.0);
-
-  std::cout << std::format("second hand pos({}, {})\n", second_hand->x(), second_hand->y());
-  QRectF shbr = second_hand->boundingRect();
-  std::cout << std::format("second hand bounding rect({}, {}, {}, {})\n",
-			   shbr.left(), shbr.top(), shbr.right(), shbr.bottom());
 
   setScene(scene);
 }
