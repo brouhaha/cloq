@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+Copyright 2022-2024 Eric Smith
+SPDX-License-Identifier: GPL-3.0-only
+-->
+
+<svg viewBox="0,0 200,200"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+  <g id="minor_tick">
+      <rect style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999"
+	    width="1.25"
+	    height="10"
+	    x="-0.625"
+	    y="-95" />
+    </g>
+
+    <g id="major_tick">
+      <rect style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999"
+	    width="1.25"
+	    height="20"
+	    x="-0.625"
+	    y="-95" />
+    </g>
+
+    <g id="tick_group">
+      <use href="#major_tick" transform="rotate(0)"/>
+      <use href="#minor_tick" transform="rotate(6)"/>
+      <use href="#minor_tick" transform="rotate(12)"/>
+      <use href="#minor_tick" transform="rotate(18)"/>
+      <use href="#minor_tick" transform="rotate(24)"/>
+    </g>
+
+    <g id="hour_hand">
+      <polygon style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+	       points="0,-50  2.5,-35  0,10  -2.5,-35"/>
+    </g>
+
+    <g id="minute_hand">
+      <polygon style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+	       points="0,-70  2.5,-50  0,10  -2.5,-50" />
+    </g>
+
+    <g id="second_hand">
+      <polygon style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.5"
+	       points="0.0,-75.0  2.0,-45.0  2.0,5.0  7.0,10.0  -7.0,10.0  -2.0,5.0  -2.0,-45.0"/>
+    </g>
+  </defs>
+
+  <g id="clock">
+    <circle style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+	    cx="100.0"
+	    cy="100.0"
+	    r="100.0"/>
+    <circle style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.25"
+	    cx="100.0"
+	    cy="100.0"
+	    r="95.0"/>a
+    <use href="#tick_group" transform="translate(100,100) rotate(  0)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate( 30)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate( 60)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate( 90)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate(120)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate(150)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate(180)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate(210)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate(240)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate(270)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate(300)"/>
+    <use href="#tick_group" transform="translate(100,100) rotate(330)"/>
+
+<!--
+    <use id="hour_hand"   href="#hour_hand_template"   transform="translate(100,100) rotate(90)"/>
+    <use id="minute_hand" href="#minute_hand_template" transform="translate(100,100) rotate(60)"/>
+    <use id="second_hand" href="#second_hand_template" transform="translate(100,100)"/>
+-->
+
+    <circle style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+	    cx="100.0"
+	    cy="100.0"
+	    r="3.0"/>a
+  </g>
+
+</svg>
