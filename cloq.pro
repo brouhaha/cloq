@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = cloq
 
-QMAKE_CXXFLAGS += -std=c++20
+QMAKE_CXXFLAGS += -std=c++17
 
 QT += widgets svgwidgets
 
